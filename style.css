@@ -1,48 +1,114 @@
-/* Estilos Gerais */
+
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
+    /* Define a fonte principal para todo o corpo da página */
+    font-family: 'Roboto', sans-serif;
+    /* Remove margens padrão para um controle de layout completo */
+    margin: 0;
+    /* Define uma cor de fundo suave para a página */
+    background-color: #e0f2f7; /* Um azul claro e relaxante */
+    /* Cor padrão do texto */
     color: #333;
-}
-
-/* Container centralizado */
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Títulos */
-h1, h2 {
-    color: #0056b3;
-}
-
-/* Imagem de perfil */
-.profile-image {
-    max-width: 350px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px auto;
-}
-
-/* Links sociais (se houver) */
-.social-links a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #007bff;
-}
-
-/* Seção do vídeo (não presente no HTML, mas estilo de exemplo) */
-.video-container {
-    margin-top: 20px;
+    /* Usa Flexbox para centralizar o conteúdo principal na tela */
+    display: flex;
+    /* Centraliza horizontalmente */
+    justify-content: center;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Garante que o corpo ocupe a altura total da viewport */
+    min-height: 100vh;
+    /* Centraliza o texto de forma geral dentro do body */
     text-align: center;
 }
 
+.container {
+    /* Define a largura máxima do card para evitar que ele fique muito largo em telas grandes */
+    max-width: 800px;
+    /* Garante que o card ocupe 90% da largura da tela em dispositivos menores */
+    width: 90%;
+    /* Centraliza o container horizontalmente dentro do Flexbox do body */
+    margin: auto;
+    /* Define o fundo do card como branco */
+    background: white;
+    /* Adiciona preenchimento interno ao card */
+    padding: 30px;
+    /* Arredonda os cantos do card */
+    border-radius: 12px;
+    /* Adiciona uma sombra proeminente ao card para um efeito 3D */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma borda sutil ao redor do card */
+    border: 1px solid #b3e0ff;
+    /* Alinha o texto dentro do container de volta para a esquerda */
+    text-align: left;
+}
+
+h1 {
+    /* Cor do título principal */
+    color: #0056b3;
+    /* Tamanho maior para o título principal */
+    font-size: 2.5em;
+    /* Espaçamento abaixo do título */
+    margin-bottom: 20px;
+}
+
+h2 {
+    /* Cor para os subtítulos */
+    color: #007bff;
+    /* Tamanho dos subtítulos */
+    font-size: 1.8em;
+    /* Espaçamento acima e abaixo dos subtítulos */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    /* Tamanho da fonte para os parágrafos */
+    font-size: 1.1em;
+    /* Altura da linha para melhor legibilidade */
+    line-height: 1.6;
+    /* Espaçamento abaixo de cada parágrafo */
+    margin-bottom: 10px;
+}
+
+.profile-image {
+    /* Define a largura máxima da imagem do perfil */
+    max-width: 250px;
+    /* Transforma a imagem em um círculo perfeito */
+    border-radius: 50%;
+    /* Garante que a imagem seja um elemento de bloco */
+    display: block;
+    /* Centraliza a imagem horizontalmente */
+    margin: 0 auto 20px auto;
+    /* Adiciona uma borda colorida ao redor da imagem */
+    border: 5px solid #007bff;
+    /* Adiciona uma sombra sutil à imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para links sociais (se adicionados no HTML) */
+.social-links a {
+    /* Espaçamento entre os links */
+    margin-right: 15px;
+    /* Remove o sublinhado padrão dos links */
+    text-decoration: none;
+    /* Cor dos links */
+    color: #007bff;
+    /* Torna o texto dos links em negrito */
+    font-weight: bold;
+}
+
+/* Estilo para o container de vídeo (se adicionado no HTML) */
+.video-container {
+    /* Espaçamento acima do container de vídeo */
+    margin-top: 20px;
+    /* Centraliza o conteúdo dentro do container de vídeo */
+    text-align: center;
+}
+
+/* Estilo para iframes (como vídeos incorporados) */
 iframe {
+    /* Garante que o iframe não exceda a largura do seu contêiner */
     max-width: 100%;
+    /* Altura automática para manter a proporção */
     height: auto;
 }
