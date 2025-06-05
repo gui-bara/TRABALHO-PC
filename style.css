@@ -1,0 +1,48 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container centralizado */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1, h2 {
+    color: #0056b3;
+}
+
+/* Imagem de perfil */
+.profile-image {
+    max-width: 350px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* Links sociais (se houver) */
+.social-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Seção do vídeo (não presente no HTML, mas estilo de exemplo) */
+.video-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
